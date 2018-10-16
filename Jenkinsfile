@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                chmod +x sample.py
-                ./sample.py
+                sh 'chmod +x sample.py'
+                sh './sample.py'
             }
         }
     }
