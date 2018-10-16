@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                echo 'Hello World'
+                chmod +x sample.py
+                ./sample.py
             }
         }
     }
