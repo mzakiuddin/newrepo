@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'chmod +x sample.py'
                 sh './sample.py'
-                echo "Some Message" > some.txt
+                sh 'echo "Some Message" > some.txt'
             }
         }
     }
