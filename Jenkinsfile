@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                sh 'chmod +x sample.py'
-                sh './sample.py'
+                sh 'python3 sample.py'
                 sh 'echo "Some Message" > some.txt'
             }
         }
