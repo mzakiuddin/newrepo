@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('RunScript') {
             steps {
-                sh 'python3 cleaning.py'  > 'pop.csv'
+                sh 'python3 cleaning.py >> pop.csv'
                 
                 sh 'echo cleaning.py'
             }
