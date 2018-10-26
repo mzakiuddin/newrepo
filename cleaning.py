@@ -155,7 +155,7 @@ req_flds = ['Prefix', 'Contact_Name', 'First_Name', 'Middle_Name', 'Last_Name', 
 
 dataframe = pd.DataFrame(list, columns=req_flds)
 print(dataframe)
-dataframe.to_csv('https://s3-us-west-2.amazonaws.com/dcind-interns/jenkins/CRM+Lead+Data+Report_20120110_DNB_Freshagug_list_part_26.csv', index=False)
+dataframe.to_csv('https://s3-us-west-2.amazonaws.com/dcind-interns/cleansing-input/CRM+Lead+Data+Report_20120110_DNB_Freshagug_list_part_26.csv', index=False)
 
 #
 # /home/harvest/Desktop/madamnew/securefolder1/MZData/All CSV/Master Data - VARIED FORMATS Clean
