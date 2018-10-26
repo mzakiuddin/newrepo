@@ -4,8 +4,8 @@ pipeline {
         stage('RunScript') {
             steps {
                 sh 'python3 cleaning.py >> pop.csv'
+                sh 'aws s3 cp pop.csv s3://dcind-interns/jenkins/'
                 
-                sh 'echo cleaning.py'
             }
         }
         stage('S3command'){
