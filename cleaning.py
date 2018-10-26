@@ -1,7 +1,7 @@
 #!usr/bin/python
 import pandas as pd
 import numpy as np
-df = pd.read_excel('/home/zaki/Desktop/CRM Lead Data Report_20120110_DNB_Freshagug_list_part_26.xls')
+df = pd.read_excel('https://s3-us-west-2.amazonaws.com/dcind-interns/cleansing-input/CRM+Lead+Data+Report_20120110_DNB_Freshagug_list_part_26.xls')
 list=[]
 # middle name has nan as float so replacing all nans with empty string
 df1 = df.replace(np.nan, '', regex=True)
