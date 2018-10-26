@@ -4,7 +4,7 @@ pipeline {
         stage('Example') {
             steps {
                 sh 'python3 sample.py'
-                sh 'echo "Some Message" > some.txt'
+                sh 'aws s3 cp ./sample.py s3://dcind-interns/jenkins/jenkinoutcheck.txt'
                 sh 'aws s3 ls'
             }
         }
