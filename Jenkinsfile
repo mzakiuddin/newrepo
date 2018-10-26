@@ -3,12 +3,7 @@ pipeline {
     stages {
         stage('RunScript') {
             steps {
-                sh 'python3 cleaning.py >> test.csv'
-            }
-        }
-        stage('ToS3'){
-            steps{
-                sh 'aws s3 cp test.csv s3://dcind-interns/jenkins/cleaningscript.csv'
+                sh 'python3 cleaning.py'
             }
         }
         stage('S3command'){
