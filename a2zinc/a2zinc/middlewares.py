@@ -59,7 +59,7 @@ import random
 
 class ProxyMiddleware(object):
 
-    proxy_pool = open("/home/zaki/Desktop/walk/newrepo/a2zinc/Proxylist.csv").read().splitlines()
+    proxy_pool = open("newrepo/a2zinc/Proxylist.csv").read().splitlines()
 
     # overwrite process request
     def process_request(self, request, spider):
