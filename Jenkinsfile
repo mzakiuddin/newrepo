@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('RunScrapy') {
             steps {
-                sh 'newrepo/a2zinc/a2zinc/spiders/ea2zin.py'
+                sh 'ea2zin.py'
                 sh 'scrapy crawl ea2zin -o ea2zinc.csv'
                 sh 'aws s3 cp ea2zinc.csv s3://dcind-interns/jenkins-scrapy/'
                 
