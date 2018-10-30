@@ -7,10 +7,6 @@ pipeline {
                 sh 'cd a2zinc && scrapy crawl ea2zin -o ea2zinc.csv'                
             }
         }
-        stage('S3command'){
-            steps{
-                sh 'aws s3 ls'
-            }
-        }
+       
     }
 }
